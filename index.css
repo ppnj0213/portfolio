@@ -33,7 +33,7 @@ a {
 	justify-content: flex-end;
     margin-right: 30px;
     padding-left: 0;
-    padding-top: 5px;
+    padding: 5px;
 }
 
 .navbar li {
@@ -124,8 +124,6 @@ section {
     display: flex;
     width: 300px;
     height: 384px;
-    border-radius: 20px;
-    overflow: hidden;
     margin-right: 20px;
 }
 
@@ -146,8 +144,84 @@ section {
 }
 
 .me a {
-    background-color: #92bce9;
+    background-color: #f4da94;
 }
+
+#page3 {
+    background-color: #f1f1f1;
+    align-items: flex-start;
+}
+
+#page3 h2 {
+    position: absolute;
+    margin-top: 60px;
+}
+
+.likes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25%;
+}
+
+.images div {
+    display: flex;
+    width: 270px;
+    height: 350px;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.images p {
+    position: absolute;
+    font-size: 20px;
+    padding: 7px;
+    display: none;
+    color: black;
+}
+
+.likes img {
+    border-radius: 20px;    
+    width: 100%;
+    height: 310px;
+}
+
+.images div img:hover {
+    opacity: 0.3;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.images div:hover p {
+    display: block;
+    opacity: 1;
+}
+
+.coffee img:last-child {
+    display: none;
+}
+.travel img:last-child {
+    display: none;
+}
+
+.movie img:last-child {
+    display: none;
+}
+
 
 .modal_box {
     display: flex;
@@ -312,6 +386,50 @@ footer {
 
     .modal_btn {
         margin-top: 0;
+    }
+
+    .likes {
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+    }
+
+    .images {
+        flex-direction: column;
+        height: 100%;
+        margin-top: 15%;
+    }
+
+    .images div {
+        align-items: flex-end;
+        width: 80%;
+        height: 33%;
+    }
+
+    .likes img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .images div img:hover {
+        opacity: 1;
+    }
+    
+    .images div:hover p {
+        display: none;
+    }
+
+    .coffee img:last-child {
+        display: block;
+    }
+
+    .travel img:last-child {
+        display: block;
+    }
+
+    .movie img:last-child {
+        display: block;
     }
 
 }
