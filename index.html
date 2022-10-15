@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2f02369a0a.js" crossorigin="anonymous"></script>
+        <script src="index.js" defer></script>
+        <title>🌼 Na Jeong</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="navbar_menu">
+                <li><a href="#page1">Hello</a></li>
+                <li><a href="#page2">AboutMe</a></li>
+                <li><a href="#page3">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="navbar_toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+        <section id="page1">
+            <div class="introduce">
+                <div class="image_box">
+                    <img class="my_image" src="png/my_image.png" alt="image">
+                </div>
+                <div class="greetings">
+                    <span class="typing"></span>
+                </div>
+            </div>
+        </section>
+        <section id="page2">
+            <div class="about">
+                <img class="about_image" src="png/aboutImg.png" alt="image">
+            </div>
+            <div class="me_box">
+                <div class="me">
+                    <span>안녕하세요 :)</span>
+                    <span>위코드 40기 FrontEnd 개발자 <a>박나정</a>입니다.</span>
+                    <span>2022년 현재 <a>27살</a>이고, <a>러시아어</a> 전공자에요!</span>
+                    <span>IT 솔루션 회사에 1년동안 재직하다가, <a>Front End 개발자</a>로 전향하고 싶어서 새롭게 시작합니다.</span>
+                    <span>그 시작을 위코드와 하게 되었네요, 잘 부탁드립니다 !</span>
+                </div>
+                <div class="modal_box">
+                    <button class="modal_btn">#ISFP</button>
+                    <button class="modal_btn">#강아지</button>
+                    <button class="modal_btn">#여행</button>
+                </div>
+                <div class="modal_back">
+                    <div class="modal">
+                        <h1>ISFP</h1>
+                        <img src="png/mbti.png" alt="mbti">
+                        <p>
+                            저의 MBTI는 ISFP에요.<br/>
+                            처음에는 낯을 가리지만, 적응력이 빠르고 편해지면 선택적 외향인이 돼버려요!<br/>
+                            누워있길 좋아해서 의자에 누운듯이 앉을 수도 있지만,<br/> 열심히 하는 중이랍니다😅
+                        </p>
+                        <span class="close_btn">닫기</span>
+                    </div>
+                </div>
+                <div class="modal_back">
+                    <div class="modal">
+                        <h1>저희집 강아지를 소개합니다 !</h1>
+                        <img src="png/pong.png" alt="mbti">
+                        <p>
+                            제 강아지는 저와 함께한지 벌써 15년이 되었어요<br/>
+                            이름은 퐁퐁이 이고, 남자 아이랍니다 🐶<br/>
+                            나이가 많아져서 이젠 잘 들리지도, 보이지도 않지만 제 소중한 보물이에요!
+                        </p>
+                        <span class="close_btn">닫기</span>
+                    </div>
+                </div>
+                <div class="modal_back">
+                    <div class="modal">
+                        <h1>여행을 좋아해요</h1>
+                        <img src="png/paris.png" alt="mbti">
+                        <p>
+                            저는 여행을 통해 그 지역만의 감성을 느끼는걸 좋아해요<br/>
+                            국내와 해외로 여행을 여러번 다닌 결과, 제 인생 여행지는 프랑스가 되었습니다 🇫🇷<br/>
+                            언젠가 꼭 다시 가고 싶은 곳이에요
+                        </p>
+                        <span class="close_btn">닫기</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="page3">
+            <h2>Skills</h2>
+        </section>
+        <footer>footer</footer>
+        <a onclick="moveOnTop()" class="btn_mvTop"></a>
+    </body>
+    <script>
+        let moveOnTop = function() {
+            document.body.scrollIntoView({behavior: "smooth"});
+        };
+    </script>
+</html>
