@@ -155,6 +155,8 @@ section {
 #page3 h2 {
     position: absolute;
     margin-top: 60px;
+    font-family: 'YiSunShinDotumM';
+    z-index: 0;
 }
 
 .likes {
@@ -193,6 +195,7 @@ section {
     padding: 7px;
     display: none;
     color: black;
+    font-family: 'YiSunShinDotumM';
 }
 
 .likes img {
@@ -211,18 +214,62 @@ section {
     opacity: 1;
 }
 
-.coffee img:last-child {
-    display: none;
-}
-.travel img:last-child {
-    display: none;
-}
-
+.coffee img:last-child,
+.travel img:last-child,
 .movie img:last-child {
     display: none;
 }
 
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #b1d4ee;
+    font-family: 'YiSunShinDotumM';
+}
 
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contact_icons {
+    display: flex;
+}
+
+.contact_icons div {
+    display: flex;
+    align-items: center;
+}
+
+.phone, .email {
+    flex-direction: column;
+}
+
+.media1 div,
+.media2 div {
+    margin-right: 50px;
+}
+
+.contact a,
+.media2 p {
+    margin-top: 20px;
+}
+
+.media2 div {
+    align-items: center;
+}
+
+.media2 a {
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+
+
+/* 모달창 */
 .modal_box {
     display: flex;
     flex-direction: row;
@@ -272,6 +319,7 @@ section {
     background-color: #fafde0;
     border-radius: 10px;
     text-align: center;
+    z-index: 2;
 }
 
 .modal h1 {
@@ -304,30 +352,16 @@ section {
     border-radius: 10px;
 }
 
-footer {
-    width: 100%;
-    height: 20vh;
-    background-color: #ededb6;
-}
-
-.btn_mvTop {
+.fa-circle-arrow-up {
     position: fixed;
-    background-image: url("png/scroll2.png");
-    background-size: cover;
     bottom: 1rem;
     right: 1rem;
     width: 4rem;
     height: 4rem;
 }
 
-.btn_mvTop:hover {
-    background-image: url("png/scroll1.png");
-    background-size: cover;
-}
-
 @media screen and (max-width: 768px){
     .navbar {
-        /* display: flex; */
         flex-direction: column;
         align-items: center;
     }
@@ -337,13 +371,22 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        /* height: 210px; */
     }
 
-    .navbar_menu li {
+    /* .navbar_menu li {
+        border: 1px solid red;
         padding: 10px 12px;
         width: 100%;
         justify-content: center;
+    } */
+
+    .navbar_menu li {
+        background-color: #f4da94;
+        padding: 10px 0;
+        width: 107%;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .navbar_menu a:hover {
@@ -388,6 +431,10 @@ footer {
         margin-top: 0;
     }
 
+    #page3 h2 {
+        margin-top: 10px;
+    }
+
     .likes {
         flex-direction: column;
         width: 100%;
@@ -404,6 +451,7 @@ footer {
         align-items: flex-end;
         width: 80%;
         height: 33%;
+        margin-bottom: 2px;
     }
 
     .likes img {
@@ -420,16 +468,85 @@ footer {
         display: none;
     }
 
-    .coffee img:last-child {
-        display: block;
-    }
-
-    .travel img:last-child {
-        display: block;
-    }
-
+    .coffee img:last-child,
+    .travel img:last-child,
     .movie img:last-child {
         display: block;
     }
 
+    footer {
+        height: 40vh;
+    }
+
+    .contact_icons {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact_icons div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .media2 a {
+        margin-right: 40px ;
+    }
+    
+    .modal {
+        width: 90%;
+    }
+
+    .fa-circle-arrow-up {
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .navbar_menu li {
+        padding: 10px 0;
+        width: 110%;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .me_box {
+        width: 90%;
+    }
+
+    .me {
+        margin-left: 0;
+    }
+    
+    .modal_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal_btn {
+        margin-top: 5px;
+        margin-left: 14px;
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    .images div {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .coffee img:last-child,
+    .travel img:last-child,
+    .movie img:last-child {
+        display: none;
+    }
+
+    .contact_icons div {
+        justify-content: center;
+    }
 }

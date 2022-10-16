@@ -16,9 +16,9 @@
                 <li><a href="#page1">Hello</a></li>
                 <li><a href="#page2">AboutMe</a></li>
                 <li><a href="#page3">Like</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
-            <a href="#" class="navbar_toggle">
+            <a class="navbar_toggle">
                 <i class="fa-solid fa-bars"></i>
             </a>
         </nav>
@@ -110,8 +110,37 @@
                 </div>
             </div>
         </section>
-        <footer>footer</footer>
-        <a onclick="moveOnTop()" class="btn_mvTop"></a>
+        <footer id="footer">
+            <div class="contact">
+                <div class="contact_icons">
+                    <div class="media1">
+                        <div class="phone">
+                            <i class="fa-solid fa-mobile-button fa-4x"></i>
+                            <a> +82 10-8644-5908</a>
+                        </div>
+                        <div class="email">
+                            <i class="fa-regular fa-envelope fa-4x"></i>
+                            <a>ppnj0213@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="media2">
+                        <div class="velog">
+                            <a href="https://velog.io/@na_jeong">
+                                <i class="fa-regular fa-file fa-4x"></i>
+                                <p>velog</p>
+                            </a>
+                        </div>
+                        <div class="git">
+                            <a href="https://github.com/ppnj0213/portfolio">
+                                <i class="fa-brands fa-github fa-4x"></i>
+                                <p>github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <i class="fa-solid fa-circle-arrow-up fa-3x" onclick="moveOnTop()"></i>
     </body>
     <script>
         let moveOnTop = function() {
